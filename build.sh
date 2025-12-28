@@ -3,6 +3,9 @@ set -eu
 
 echo "Building WebAssembly hello world..."
 
+EM_CACHE="/cache"
+mkdir -p "$EM_CACHE"
+
 em++ \
   main.cpp \
   -O2 \
